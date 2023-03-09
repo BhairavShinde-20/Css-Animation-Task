@@ -1,0 +1,128 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* navbar start */
+
+.navBar {
+    width: 800px;
+    height: 30px;
+    margin: 50px auto;
+}
+
+.navBar li {
+    float: left;
+    text-align: center;
+    list-style-type: none;
+}
+
+.navBar li a {
+    text-decoration: none;
+    border: solid 1px black;
+    width: 190px;
+    height: 30px;
+    background-color: rgb(96, 242, 98);
+    display: block;
+    padding-top: 5px;
+}
+
+.navBar li a:hover {
+    background-color: rgb(137, 99, 107);
+}
+
+.serVi li {
+    float: none !important;
+}
+
+.serVi {
+    display: none;
+}
+
+.navBar li:hover .serVi {
+    display: block;
+}
+
+
+/* navbar end */
+
+
+/*  overlay Effect css start */
+
+.box {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    margin: 250px auto;
+    box-shadow: 1px 1px 2px 2px black;
+}
+
+.box img {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+}
+
+.overlay {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    background-color: rgb(227, 54, 54);
+    opacity: 0.5;
+    color: rgb(85, 155, 69);
+}
+
+.effect1 {
+    transform: translate(0px, -200px);
+}
+
+.effect2 {
+    transform: translate(300px, 0px);
+}
+
+.effect3 {
+    transform: translate(0px, 200px);
+}
+
+.effect4 {
+    transform: translate(-300px, 0px);
+}
+
+.effect5 {
+    transform: translate(300px, 200px);
+}
+
+.effect6 {
+    transform: translate(-300px, -200px);
+}
+
+.effect7 {
+    transform: translate(300px, -200px);
+}
+
+.effect8 {
+    transform: translate(-300px, 200px);
+}
+
+.effect9 {
+    transform: scale(0);
+}
+
+.box1:hover .effect1,
+.box1:hover .effect2,
+.box1:hover .effect3,
+.box1:hover .effect4,
+.box1:hover .effect5,
+.box1:hover .effect6,
+.box1:hover .effect7,
+.box1:hover .effect8 {
+    transform: translate(0px, 0px);
+    transition: all 4s;
+}
+
+.box1:hover .effect9 {
+    transform: scale(1);
+    transition: all 4s;
+}
